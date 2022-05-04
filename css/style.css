@@ -1,0 +1,504 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    text-align: -webkit-match-parent;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+button
+
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../img/webbackg.jpeg') no-repeat center center/cover;
+    height: 500px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;;
+}
+
+#home h1{
+    color:rgb(7, 6, 6);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:rgb(2, 2, 2);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services-container{
+    margin-top: 115px;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+    width:50%;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    padding: 100px;
+}
+.h-prime{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    padding: 20px;
+}
+
+.h-primary2{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    padding: 25px;
+}
+
+.h-primary3{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    padding: 40px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.h-theme{
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+
+
+.btn {
+  background: #5E5DF0;
+  border-radius: 999px;
+  box-shadow: #5E5DF0 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin:15px;
+  
+}
+
+.btn-register {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin:15px;
+    
+    
+  }
+
+.center{
+    text-align: center;
+}
+
+
+.button-login {
+  background-color: #fff;
+  border: 0 solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-sizing: border-box;
+  color: #0d172a;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Bree Serif', serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  text-decoration-thickness: auto;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 20px;
+}
+
+#dropdown{
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 1.5rem;
+}
+.selectmenu{
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    left: 47%;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#footer-stud{
+    position: fixed;
+    padding: 10px 7px 0px 7px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgb(2, 0, 0);
+}
+#contact1{
+    position: relative;
+}
+#contact1::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 700px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+}
+
+#contact1 #services{
+    margin: 8px;
+}
+
+/* --- Student filter ---*/
+.container {
+    overflow: hidden;
+
+  }
+  
+  .filterDiv {
+    background-color: #152d4b;
+    color: #ffffff;
+    width: 100px;
+    line-height: 47px;
+    text-align: center;
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btnn{
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btnn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btnn.active {
+    background-color: #666;
+    color: white;
+  }
+  
+#myBtnContainer{
+    text-align: center;
+}
+
+#container div{
+    align-items: center;
+    text-align: center;
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+    background-position: 10px 5px; /* Position the search icon */
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-left: 148px;
+    margin-right: 14px;
+    width: 75%;
+  }
+  
+
+
+/* CSS */
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 29px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+/* STUDENT PAGE DETAILS */
+.btn-reg {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: fit-content;
+    word-break: break-word;
+    border: 0;
+    margin:15px;
+    margin-bottom: 6px;
+  }

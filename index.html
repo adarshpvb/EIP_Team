@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> EIP | Events Information Portal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="css/phone.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="student.html">
+    <link rel="stylesheet" href="contact.html">
+    <link rel="stylesheet" href="researcher.html">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="img/logowithbackcircle.png">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#contact">Organise</a></li>
+            <li class="item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <a type="button" class="button-login" href="login.html" >Login</a>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">Event Information Portal</h1>
+        <p>A place where one can get information on all the upcoming events which can help in personal, </p>
+            <p>professional and social growth of an individual.</p>
+        
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary2 center">Top Events</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/sih-logo.png" alt="">
+                <h2 class="h-secondary center">Smart India Hackathon</h2>
+                <h3 class="h-theme center">Tech</h3>
+                <p class="center">Smart India Hackathon is a nationwide initiative to provide students 
+                    with a platform to solve some of the pressing problems we face in our daily lives,
+                     and thus inculcate a culture of product innovation and a mindset of problem-solving.
+                      </p>
+                      <br>
+                <p class="center">For more info: 
+                <a href="https://www.sih.gov.in/" target="_blank">SIH</a></p>
+                <p class="center"><button class="btn-register center">Register Now</button></p>
+            </div>
+            <div class="box">
+                <img src="img/aarush-logo.png" alt="">
+                <h2 class="h-secondary center">Aaruush SRM</h2>
+                <h3 class="h-theme center">Fest</h3>
+                <p class="center">Aaruush is the student-run, official Annual Techno-Management 
+                    Fest of SRM Institute of Science and Technology, Chennai. Team Aaruush is an
+                     ever-expanding family of talented individuals. Aaruush provides a platform to innovate a multitude of ideas which 
+                       range fromMedical Sciences to Entrepreneurship, Robotics,
+                        and Game Development.</p>
+                        <br>
+                        <p class="center">For more info: 
+                        <a href="https://in.linkedin.com/company/aaruush-srm-ist" target="_blank">Aaruush</a></p>
+                        <p class="center"><button class="btn-register center">Register Now</button></p>
+            </div>
+            <div class="box">
+                <img src="img/India-MUN-logo.png" class="mun">
+                <h2 class="h-secondary center">India-MUN</h2>
+                <h3 class="h-theme center">Conference</h3>
+                <p class="center">India MUN is a pan-India program singularly focused on uniting India’s
+                     youth for climate action. India MUN is a joint initiative of Gaia The Earth Foundation
+                      and BuzzOnEarth, the organizations that are committed to sustainability and regeneration.
+                       India MUN is aligned with and supports the goals of UNFCCC and UNEP on climate action</p>
+                       <br>
+                       <p class="center">For more info:
+                           <a href="https://indiamun.org/" target="_blank">India MUN</a></p>
+                           <p class="center"><button class="btn-register center">Register Now</button></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="register-page">
+        <form >
+            <label><p id="dropdown">Are you a Student/Faculty : </p></label>
+            <br>
+            <script language="javascript">
+            function SelectRedirect(){
+
+                switch(document.getElementById('s1').value)
+                {
+                case "Student":
+                window.location="student.html";
+                break;
+                
+                case "Faculty":
+                window.location="faculty.html";
+                break;
+                
+                case "Researchers":
+                window.location="researcher.html";
+                break;
+
+                default:
+                window.location="#";
+                break;
+                }
+                }
+            </script>
+            <SELECT id="s1" class="selectmenu center" NAME="section" onChange="SelectRedirect();">
+                <option value="">Select</option>
+                <option value="Student">Student</option>
+                <option value="Faculty">Faculty</option>
+                <option value="Researchers">Researchers</option>
+                </SELECT>
+        </form>
+        <br>
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary3 center">Add Event Details</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Institute/Company Name : </label>
+                    <input type="text" name="name" id="name" placeholder="Institute/Company Details">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Event Name : </label>
+                    <input type="phone" name="name" id="phone" placeholder="Name of Event">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="10" rows="5"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy;2022 www.eip.in | All rights reserved
+        </div>
+    </footer>
+</body>
+
+</html>
